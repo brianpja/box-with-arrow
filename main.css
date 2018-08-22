@@ -1,0 +1,25 @@
+.box {
+  width: 200px;
+  background-color: #ffffff;
+  border: solid 1px #e0e0e0;
+  padding: 12px;
+  margin: 48px;
+  border-radius: 3px;
+  position: relative;
+  z-index: 100;
+}
+
+.box::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border: solid 1px #e0e0e0;
+  border-right: 0;
+  border-bottom: 0;
+  position: absolute;
+  top: -6px;
+  transform: rotate(45deg);
+  /* overflow: hidden; */
+  z-index: 200;
+}
